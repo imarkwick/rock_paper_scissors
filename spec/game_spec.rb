@@ -1,7 +1,15 @@
-# Has a player
+require 'game'
 
-# Has a robot player/oponent
+describe Game do
 
-# Has a winner
+	let(:game){ Game.new }
 
-# Each player makes a move
+	# Has a player
+
+	# Has a robot player/oponent
+
+	# Has a winner
+
+	# Each player makes a move
+
+end

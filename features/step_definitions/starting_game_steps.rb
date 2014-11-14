@@ -3,7 +3,7 @@ Given(/^I am on the welcome page$/) do
 end
 
 When(/^I fill out my name$/) do
-  pending # express the regexp above with the code you wish you had
+	fill_in("player_name", :with => "Izzy")
 end
 
 When(/^Press the "(.*?)" button$/) do |arg1|
