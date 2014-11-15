@@ -11,9 +11,13 @@ your move... <b><%= @move_one %></b>
 <br>
 <br>
 
-robot's move... <b><%= @move_two %></b>
+robot's move... <b><%= GAME.robot_turn %></b>
 
-<%= @result %>
+<br>
+<br>
+<br>
+
+---- <%= GAME.play(@move_one, @move_two) %> ----
 
 </body> 
 
