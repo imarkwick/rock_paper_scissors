@@ -1,6 +1,6 @@
 class Game
 
-	# attr_accessor :player, :robot
+	attr_accessor :player, :robot
 
 	def initialize
 		player = nil

@@ -6,5 +6,10 @@ I want to start a new game
 Scenario: Joining the game
 	Given I am on the welcome page
 	When I fill out my name
-	And Press the "Play" button
+	And Press the "play" button
 	Then I should be taken to the game page
+
+Scenario: Playing the game
+	Given I have registered to play
+	When I choose "scissors"
+	Then I should see the "RESULT"
