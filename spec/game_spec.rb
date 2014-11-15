@@ -10,8 +10,20 @@ describe Game do
 		expect(game.player).to eq(player)
 	end
 
-	# Has a robot player/oponent
+	it 'should have three moves' do
+		expect(game.move_count).to eq 3
+	end
 
-	# Has a winner
+	it 'same move should result in a draw' do
+		expect(game.play(:rock, :rock)).to eq "draw"	
+	end
 
+	it 'rock should beat scissors' do
+		expect(game.play(:rock, :scissors)).to eq "player wins"
+	end
+
+	it 'rock should loose to paper' do
+		expect(game.play(:rock, :paper)).to eq "computer wins"
+	end
 end
+
