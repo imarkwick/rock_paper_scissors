@@ -9,21 +9,6 @@ describe Player do
 		player.name = "Izzy"
 		expect(player.name).to eq "Izzy"
 	end
-
- 	# it 'can do rock' do
- 	# 	player.rock!
- 	# 	expect(player.rock!).to be true
- 	# end
-
- 	# it 'can do scissors' do
- 	# 	player.scissors!
- 	# 	expect(player.scissors!).to be true
- 	# end
-
- 	# it 'can do paper' do
- 	# 	player.paper!
- 	# 	expect(player.scissors!).to be true
- 	# end
 end
 
 
