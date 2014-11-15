@@ -5,4 +5,9 @@ class Game
 	def initialize
 		player = nil
 	end
+
+	def receive_shot(rps)
+		player.shoots(rps)
+	end
+
 end
