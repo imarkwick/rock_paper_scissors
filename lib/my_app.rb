@@ -20,7 +20,7 @@ class MyApp < Sinatra::Base
 	end
 
 	post '/play_game' do
-		@play = params[:play]
+		@move_one = params[:move_one]
 		p params
 		erb :results
 	end

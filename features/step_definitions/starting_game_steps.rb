@@ -28,3 +28,21 @@ Then(/^I should see the "(.*?)"$/) do |arg1|
 	expect(page).to have_content
 end
 
+Given(/^I am on the results page$/) do
+  pending # express the regexp above with the code you wish you had
+end
+
+Given(/^I can see the move I made$/) do
+  pending # express the regexp above with the code you wish you had
+end
+
+When(/^the computer makes a move$/) do
+  pending # express the regexp above with the code you wish you had
+end
+
+Then(/^The result will be given$/) do
+  pending # express the regexp above with the code you wish you had
+end
+
+
+
