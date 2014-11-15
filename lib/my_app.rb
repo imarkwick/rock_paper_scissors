@@ -25,6 +25,12 @@ class MyApp < Sinatra::Base
 		erb :results
 	end
 
+	get '/results' do
+		@move_one = params[:move_one]
+		@move_two = GAME.robot_turn
+		@result = GAME.play(@move_one, @move_two)
+		erb :results
+	end
 
 	# start the server if ruby file executed directly
 	run! if app_file == $0

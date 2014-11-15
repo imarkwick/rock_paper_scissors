@@ -29,8 +29,5 @@ class Game
 		return "player wins" if RULES[move_one] == move_two
 		"computer wins"
 	end
-
-
-
 end
 

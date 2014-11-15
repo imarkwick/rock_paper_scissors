@@ -29,19 +29,19 @@ Then(/^I should see the "(.*?)"$/) do |arg1|
 end
 
 Given(/^I am on the results page$/) do
-  pending # express the regexp above with the code you wish you had
+	visit '/results'
 end
 
 Given(/^I can see the move I made$/) do
-  pending # express the regexp above with the code you wish you had
+	expect(page).to have_content
 end
 
 When(/^the computer makes a move$/) do
-  pending # express the regexp above with the code you wish you had
+	page.should have_content(:move_two)
 end
 
 Then(/^The result will be given$/) do
-  pending # express the regexp above with the code you wish you had
+	page.should have_content(:result)
 end
 
 
