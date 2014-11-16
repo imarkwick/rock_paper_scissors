@@ -35,6 +35,12 @@ class MyApp < Sinatra::Base
 		erb :results
 	end
 
+	post '/reults' do
+		@player_name = session[:player_name]
+		@play_again = params[:play_again]
+		erb :play
+	end
+
 	# start the server if ruby file executed directly
 	run! if app_file == $0
 end
