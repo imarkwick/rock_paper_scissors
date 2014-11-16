@@ -15,19 +15,22 @@ class MyApp < Sinatra::Base
 	post '/create_player' do
 		player = Player.new
 		@player_name = params[:player_name]
+		session[:player_name] = @player_name
 		p params
 		erb :play
 	end
 
 	post '/play_game' do
+		@player_name = session[:player_name]
 		@move_one = params[:move_one]
 		p params
 		erb :results
 	end
 
 	get '/results' do
+		@player_name = session[:player_name]
 		@move_one = params[:move_one]
-		@move_two = GAME.robot_turn
+		@move_two = params{GAME.robot_turn}
 		@result = GAME.play(@move_one, @move_two)
 		erb :results
 	end
