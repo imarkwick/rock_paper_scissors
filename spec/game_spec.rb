@@ -7,7 +7,7 @@ describe Game do
 
 	it 'can have a player' do
 		game.add_player(player)
-		expect(game.player).to eq(player)
+		expect(game.player).to eq (player)
 	end
 
 	it 'should have three moves' do

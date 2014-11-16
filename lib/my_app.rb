@@ -23,21 +23,23 @@ class MyApp < Sinatra::Base
 	post '/play_game' do
 		@player_name = session[:player_name]
 		@move_one = params[:move_one]
-		p params
+		p session
 		erb :results
 	end
 
 	get '/results' do
 		@player_name = session[:player_name]
+		@player_name
 		@move_one = params[:move_one]
 		@move_two = params{GAME.robot_turn}
 		@result = GAME.play(@move_one, @move_two)
+		p params
 		erb :results
 	end
 
-	post '/reults' do
+	post '/reset' do
 		@player_name = session[:player_name]
-		@play_again = params[:play_again]
+		@play_again = params["play_again"]
 		erb :play
 	end
 

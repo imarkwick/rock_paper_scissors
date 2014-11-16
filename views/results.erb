@@ -6,7 +6,7 @@
 
 <body>
 
-your move... <b><%= @move_one %></b>
+<%= @player_name %>'s move... <b><%= @move_one %></b>
 
 <br>
 <br>
@@ -25,7 +25,7 @@ robot's move... <b><%= GAME.robot_turn %></b>
 
 
 <form action="/play_game" method="post">
-<input type="submit" nane="play_again" value="play again">
+<input type="submit" name="play_again" value="play again">
 </form>
 
 </body> 

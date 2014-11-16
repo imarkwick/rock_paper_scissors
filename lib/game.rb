@@ -25,9 +25,18 @@ class Game
 	end
 
 	def play(move_one, move_two)
-		return "draw" if move_one == move_two 
-		return "player wins" if RULES[move_one] == move_two
-		"computer wins"
+		if move_one == move_two
+			"draw"
+		elsif RULES[move_one] == move_two
+			"player wins"
+		else RULES[move_two] == move_one
+			"computer wins"
+		end
+
+		# return "draw" if move_one == move_two 
+		# return "player wins" if RULES[move_one] == move_two
+		# "computer wins"
+	
 	end
 end
 
