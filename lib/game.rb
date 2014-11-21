@@ -6,11 +6,8 @@ class Game
 		player = nil
 	end
 
-	def add_player(player)
-		self.player = player
-	end
-
 	def receive_shot(rps)
 		player.shoots(rps)
 	end
+
 end
