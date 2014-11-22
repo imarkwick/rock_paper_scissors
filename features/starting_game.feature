@@ -13,3 +13,10 @@ Scenario: Playing the game
 	Given I have registered to play
 	When I choose "scissors"
 	Then I should see the results
+
+Scenario: Displaying the results
+	Given I am on the results page
+	And I can see my move
+	And I can see the robot's move
+	And see who is the winner
+	Then I should be able to click 'play again'

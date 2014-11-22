@@ -27,3 +27,26 @@ end
 Then(/^I should see the results$/) do
 	expect(page).to have_content
 end
+
+Given(/^I am on the results page$/) do
+	visit '/play_game/results'
+	step("I have registered to play")
+	click_button("scissors")
+end
+
+Given(/^I can see my move$/) do
+	visit '/play_game/results'
+	step("I should see the results")
+end
+
+Given(/^I can see the robot's move$/) do
+  pending # express the regexp above with the code you wish you had
+end
+
+Given(/^see who is the winner$/) do
+  pending # express the regexp above with the code you wish you had
+end
+
+Then(/^I should be able to click 'play again'$/) do
+  pending # express the regexp above with the code you wish you had
+end

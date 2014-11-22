@@ -19,6 +19,6 @@ class Game
   end
 
   def robot_move
-    move.sample
+  	move.sample
   end
 end
