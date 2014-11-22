@@ -20,7 +20,6 @@ describe Player do
     expect(player.scissors?).to be true
   end
 
-
   it "can do paper" do
    	player.shoot
     expect(player.paper?).to be true

@@ -2,19 +2,21 @@
 
 <h1>results</h1>
 
-<%= @player_name %>
-
 <body>
 
 <br>
 <br>
 
-your move... <%= @move_one %>
+<%= @player_name %>'s move... <%= @move_one %>
 
 <br>
 <br>
 
-robot's move... <%= @robot_move %>
+robot's move... <%= GAME.robot_move %>
+
+<br>
+
+<%= @move_two %>
 
 </body>
 

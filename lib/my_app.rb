@@ -28,11 +28,10 @@ class MyApp < Sinatra::Base
 		erb :results
 	end
 
-	post '/play_game/results' do
+	post '/results' do
 		@player_name = session[:player_name]
 		@move_one = params[:move_one]
-		@robot_move = GAME.robot_move
-		p session
+		@move_two = GAME.robot_move
 		erb :results
 	end
 

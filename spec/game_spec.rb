@@ -18,8 +18,16 @@ describe Game do
     expect(["rock","paper","scissor"]).to include(game.robot_move)
   end
 
-  it "prints results of moves" do
-    expect(game.move)    
+  it "returns draw if player move equals robot move" do
+    expect(game.results("rock", "rock")).to eq "draw"
+  end
+
+  it "returns player wins if player move beats robot move" do
+    expect(game.results("rock", "scissors")).to eq "player wins"
+  end
+
+  it "returns robot wins if player move loses to robot move" do
+    expect(game.results("scissors", "rock")).to eq "robot wins"
   end
 end
 
