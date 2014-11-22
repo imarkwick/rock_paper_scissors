@@ -6,10 +6,23 @@ class Game
 		@player = nil
 	end
 
-	def add_player(player)
-		self.player = player
-	end
+  def add_player(player)
+    self.player = player
+  end
 
+  def move
+    ["rock", "paper", "scissor"]
+  end
+
+  def move_count
+    move.count
+  end
+
+  def robot_move
+    move.sample
+  end
+
+<<<<<<< HEAD
 	def move
 		[:rock, :paper, :scissors]
 	end
@@ -40,3 +53,6 @@ class Game
 	end
 end
 
+=======
+end
+>>>>>>> temp

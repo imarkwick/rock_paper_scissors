@@ -25,7 +25,11 @@ When(/^I choose "(.*?)"$/) do |button_name|
 end
 
 Then(/^I should see the "(.*?)"$/) do |arg1|
+<<<<<<< HEAD
 	expect(page).to have_content
+=======
+	expect(page).to have_content("results")
+>>>>>>> temp
 end
 
 Given(/^I am on the results page$/) do
