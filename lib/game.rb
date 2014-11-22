@@ -6,8 +6,20 @@ class Game
 		player = nil
 	end
 
-	def receive_shot(rps)
-		player.shoots(rps)
-	end
+  def add_player(player)
+    self.player = player
+  end
+
+  def move
+    ["rock", "paper", "scissor"]
+  end
+
+  def move_count
+    move.count
+  end
+
+  def robot_move
+    move.sample
+  end
 
 end
