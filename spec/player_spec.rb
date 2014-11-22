@@ -9,6 +9,22 @@ describe Player do
 		player.name = "Izzy"
 		expect(player.name).to eq "Izzy"
 	end
+	
+	it "can do rock" do
+      player.shoot
+      expect(player.rock?).to be true
+    end
+
+    it "can do scissors" do
+      player.shoot
+      expect(player.scissors?).to be true
+    end
+
+
+    it "can do paper" do
+      player.shoot
+      expect(player.paper?).to be true
+    end
 end
 
 

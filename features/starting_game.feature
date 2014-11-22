@@ -12,10 +12,4 @@ Scenario: Joining the game
 Scenario: Playing the game
 	Given I have registered to play
 	When I choose "scissors"
-	Then I should see the "RESULT"
-
-Scenario: Declaring the winner
-	Given I am on the results page
-	And I can see the move I made
-	When the computer makes a move
-	Then The result will be given
+	Then I should see the results
