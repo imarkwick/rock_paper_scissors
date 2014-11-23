@@ -32,6 +32,7 @@ class MyApp < Sinatra::Base
 		@player_name = session[:player_name]
 		@move_one = params[:move_one]
 		@move_two = GAME.robot_move
+		@result = GAME.results(@move_one, @move_two)
 		erb :results
 	end
 
