@@ -17,7 +17,7 @@ class Game
   end
 
   def move
-    ["rock", "paper", "scissor"]
+    ["rock", "paper", "scissors"]
   end
 
   def move_count

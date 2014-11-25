@@ -48,5 +48,5 @@ Given(/^see who is the winner$/) do
 end
 
 Then(/^I should be able to click 'play again'$/) do
-  pending # express the regexp above with the code you wish you had
+	click_button('play again')
 end
