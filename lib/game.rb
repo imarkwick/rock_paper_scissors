@@ -1,6 +1,7 @@
 class Game
 
-	attr_accessor :player, :robot
+	attr_accessor :player
+  attr_reader :move
 
 	def initialize
 		@player = nil
@@ -31,8 +32,12 @@ class Game
 
   def results(player_move, robot_move)
   	return "draw" if player_move == robot_move
-  	return "player wins" if RULES[player_move] == robot_move
-  	return "robot wins" if RULES[robot_move] == player_move
+    
+    if RULES[player_move] == robot_move
+      "player wins"
+    else
+      "robot wins"
+    end
   end
 
 end

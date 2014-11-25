@@ -23,11 +23,11 @@ describe Game do
   end
 
   it "returns player wins if player move beats robot move" do
-    expect(game.results("rock", "scissors")).to eq "player wins"
+    expect(game.results("rock", "paper")).to eq "robot wins"
   end
 
   it "returns robot wins if player move loses to robot move" do
-    expect(game.results("scissors", "rock")).to eq "robot wins"
+    expect(game.results("paper", "rock")).to eq "player wins"
   end
 end
 
