@@ -44,7 +44,7 @@ Given(/^I can see the robot's move$/) do
 end
 
 Given(/^see who is the winner$/) do
-  pending # express the regexp above with the code you wish you had
+	expect(page).to have_content
 end
 
 Then(/^I should be able to click 'play again'$/) do
