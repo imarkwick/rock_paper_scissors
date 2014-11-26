@@ -47,6 +47,6 @@ Given(/^see who is the winner$/) do
 	expect(page).to have_content
 end
 
-Then(/^I should be able to click 'play again'$/) do
-	click_button('play again')
+Then(/^I should be able to play again$/) do
+	expect(page).to have_content
 end

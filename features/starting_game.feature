@@ -19,4 +19,4 @@ Scenario: Displaying the results
 	And I can see my move
 	And I can see the robot's move
 	And see who is the winner
-	Then I should be able to click 'play again'
+	Then I should be able to play again
