@@ -4,7 +4,7 @@ The Makers Academy Marketing Array ( MAMA ) have asked us to provide them with a
 
 ## The Objective:
 
-To create a Rock, Paper, Scissors app using Sinatra to play online. It must include the following features:
+To create a Rock, Paper, Scissors app using Sinatra and deploy it to [Heroku](https://nameless-spire-5700.herokuapp.com/). It must include the following features:
 
 * Enter name before the game
 * Presented with game choices (rock, paper and scissors)
