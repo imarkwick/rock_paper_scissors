@@ -1,23 +1,38 @@
-#Rock, Paper, Scissors
+# Rock, Paper, Scissors
 
-The Makers Academy Marketing Array ( MAMA ) have asked us to provide a game for them. Their daily grind is pretty tough and they need time to steam a little.
+The Makers Academy Marketing Array ( MAMA ) have asked us to provide them with a game to play.
 
-The task is to create a Rock, Paper, Scissors app using Sinatra for them to play on the web. It must include the following features:
+## The Objective:
 
-* the marketeer has to enter their name before the game
-* the marketeer will be presented the choices (rock, paper and scissors)
-* the marketeer can choose one option
-* the game will choose a random option
-* a winner will be declared
+To create a Rock, Paper, Scissors app using Sinatra to play online. It must include the following features:
 
-To view the tests, run rspec from the command line;
+* Enter name before the game
+* Presented with game choices (rock, paper and scissors)
+* Player chooses a move
+* Game chooses a random move
+* Winner is declared
+
+## Technologies used:
+
+* Ruby
+* Sinatra
+* RSpec
+* Capybara
+* Cucumber
+
+## How to run tests:
 
 ```sh
+$ git clone https://github.com/imarkwick/rock_paper_scissors.git
+$ cd rock_paper_scissors
 $ rspec
 ```
 
-To open in the browser, use rackup and go to localhost/9292;
+## How to run the server:
 
 ```sh
+$ git clone https://github.com/imarkwick/rock_paper_scissors.git
+$ cd rock_paper_scissors
+$ bundle install
 $ rackup
 ```
